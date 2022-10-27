@@ -1,0 +1,120 @@
+/*HEADER PART*/
+.navbar {
+    background-color: rgb(148, 202, 164);
+    border-radius: 1.8rem;
+    position: fixed;
+    width:99%;
+
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 0.1rem;
+
+}
+
+.navbar ul {
+    overflow: auto;
+
+}
+
+.navbar li a {
+    padding: 0.17rem;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li a:hover {
+    color: rgb(146, 69, 69)
+}
+
+
+
+
+body {
+    background-image: url("pic2.img");
+    background-size: cover;
+
+}
+
+.ab {
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(2, 109, 77);
+}
+
+
+
+/*TYPES OF SCHEDULING PART*/
+.prem {
+    text-align: left;
+    color: rgb(6, 174, 132);
+    text-decoration: underline;
+}
+
+.type{
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: rgb(11, 108, 84);
+
+}
+
+
+/*PICTURE PART*/
+.pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0rem;
+    border-radius: 0.3rem;
+}
+
+
+/*TERMINOLOGY PART*/
+.term{
+    margin-left:0.7rem;
+    margin-right:0.7rem;
+    padding:0.2rem;
+}
+
+
+
+/*SCHEDULING ALGORITHM PART*/
+.cpu {
+    flex-direction: row;
+    display: flex;
+    margin-left: 5rem;
+}
+
+.algo {
+    border: 0.1rem solid black;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    padding: 0.9rem;
+    margin: 0.9rem;
+    height: auto;
+    width: 20rem;
+}
+
+
+
+/*IMPLEMENTATION BUTTON PART*/
+.btn {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: rgb(211, 242, 232);
+    
+}
+
+button:hover {
+    color: rgb(133, 37, 7)
+}
+
+a {
+    text-decoration: none;
+}

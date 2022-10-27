@@ -1,0 +1,116 @@
+body {
+
+    background-image: url("pic1.img");
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+div {
+    display: flex;
+}
+
+
+h1 {
+    color: rgb(3, 3, 125);
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+
+.heading {
+    text-decoration: underline;
+    margin: 0.4rem;
+    color: rgb(3, 50, 67);
+}
+.heading:hover {
+    color: rgb(4, 137, 6);
+}
+
+
+/* TABLE */
+#input-table {
+    border: 0.1rem solid black;
+    margin: auto;
+    
+}
+th,
+td {
+    border: 0.01rem solid black;
+    padding: 8px;
+   
+}
+
+
+/* ARRIVAL,BURST INPUT */
+#AT {
+    border-radius: 0.3em;
+    width: 9rem;
+}
+#BT {
+    border-radius: 0.3em;
+    width: 9rem;
+}
+.abt{
+    justify-content: center;
+}
+strong{
+    padding:0.5rem;
+}
+
+
+/* TIME QUANTA INPUT */
+#timequanta {
+    display: flex;
+}
+#TQ {
+    border-radius: 0.3em;
+    width: 10rem;
+    padding:0.5rem;
+}
+
+
+/* Average INPUT */
+#average {
+    position: relative;
+    padding-top: 1.3rem;
+    justify-content: center;
+}
+#averagebox1,
+#averagebox2 {
+    border-radius: 0.3rem;
+    padding:0.3rem;
+}
+.avg-text{
+    padding:0.5rem;
+}
+
+
+/* DELETE,ADD,EXECUTE BUTTON*/
+.container {
+    position: relative;
+    padding-top: 0.5rem;
+    justify-content: center;
+}
+#execute,
+#add,
+#delete {
+    padding: 0.4rem;
+    border-radius: 0.3em;
+    cursor: pointer;
+    width: 6rem;
+    
+}
+.row {
+    padding:0.5rem;
+}
+a{
+    text-decoration: none;
+}
+button:hover {
+    color: rgb(137, 6, 6);
+}
+
+#animator{
+   justify-content: center;
+}

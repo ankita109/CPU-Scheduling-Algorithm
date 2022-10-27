@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU Scheduling</title>
+
+    <link rel="Stylesheet" href="Index1.css">
+
+</head>
+
+<body>
+    <h1>CPU SCHEDULING ALGORITHMS</h1>
+    <h4 class="heading">SELECT YOUR CPU ALGORITHMS</h4>
+    <input class="option-input radio" type="radio" name="algorithm" id="SJF" onclick="radioClicked(this.id)">
+    <label for="SJF">SHORTEST JOB FIRST</label><br>
+    <input class="option-input radio" type="radio" name="algorithm" id="SRTF" onclick="radioClicked(this.id)">
+    <label for="SRTF">SHORTEST REMAINING TIME FIRST</label><br>
+    <input class="option-input radio" type="radio" name="algorithm" id="RR" onclick="radioClicked(this.id)">
+    <label for="RR">ROUND ROBIN</label><br><br>
+
+    <div class="abt">
+        <strong>Enter Arrival Time:-</strong>
+        <input type="number" min="0" id="AT" placeholder="Enter Arrival Time">
+        <strong>Enter Burst Time:- </strong>
+        <input type="number" min="0" id="BT" placeholder="Enter Burst Time">
+
+        <span id="timequanta">
+            <strong id="timetext">Enter Time Quanta:-</strong>
+            <input type="number" min="0" id="TQ" placeholder="Enter Time Quanta">
+        </span>
+    </div><br>
+
+    <table id="input-table">
+        <thead>
+            <tr>
+                <th colspan="7">SCHEDULING TABLE</th>
+            </tr>
+        </thead>
+        <tr>
+            
+            <td>PROCESS</td>
+            <td>ARRIVAL TIME</td>
+            <td>BURST TIME</td>
+            <td>RESPONSE TIME</td>
+            <td>TURNAROUND TIME</td>
+            <td>COMPLETION TIME</td>
+            <td>WAITING TIME</td>
+           
+        </tr>
+    </table>
+     
+    <div id="average">
+    <div class="avg-text" id="average1">Avg. Completion Time =&nbsp<input class="ans-avg" type="text" id="averagebox1"
+        placeholder="0" readonly></div>
+    <br><br>
+    <div class="avg-text" id="average2">Avg. Turn Around Time =&nbsp <input class="ans-avg" type="text" id="averagebox2"
+        placeholder="0" readonly> </div>
+    <br><br>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <button type="button" id="add" onclick="addRow()">ADD </button>
+        </div>
+        <div class="row">
+            <button type="button" id="delete" onclick="deleteRow()">DELETE</button>
+        </div>
+        <div class="row">
+            <button id="execute" onclick="calculate()"><a href="#animator">EXECUTE</a></button>
+        </div>
+    </div>
+
+  
+    
+    <div id="animator">
+        <span id="cover">
+        </span>
+        <table id="mytb">
+            <tr id="processr"></tr>
+            <tr id="timer"></tr>
+        </table>
+    </div>
+
+
+</body>
+<script src="os.js"></script>
+<script src="jquery.min.js"></script>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="Index.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#type1"> Types &nbsp</a></li>
+                <li><a href="#type2"> Terminologies &nbsp </a></li>
+                <li><a href="#type3"> Algorithms &nbsp</a></li>
+                <li><a href="Index1.html"> Implementation &nbsp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div style="padding-top:3.5rem">
+        <h1 class="ab">CPU SCHEDULING </h1>
+        <p style="text-align:center; font-size: 1.3rem;"><b>CPU Scheduling</b> is the process of deciding which
+            process will own the CPU to use while another process is suspended.<br>
+            The main function of the CPU scheduling is to ensure that whenever the CPU remains idle, the OS has at least
+            selected <br>
+            one of the processes available in the ready-to-use line.<br></p>
+        <img src="pic3.jpg" class="pic" width="50%" height="auto">
+    </div>
+
+
+    <div id="type1" style="margin-bottom:5rem;"></div>
+    <h2 class="type">TYPES OF CPU SCHEDULING</h2>
+    <p style="font-size:1.3rem;"><b>-> </b>There are two types of CPU scheduling :- <b> Preemptive</b>, and
+        <b>Non-preemptive</b>.
+    </p>
+
+    <h3 class="prem">1. Preemptive Scheduling:-</h3>
+    <p style="text-align:left; font-size: 1.0rem;margin-left:0.7rem;">Preemptive scheduling is used when a process
+        switches from running state to ready state or from the waiting state to the ready state.</p>
+    <img src="pre.png" class="pic" width="300rem" height="auto">
+
+    <h3 class="prem">2. Non-Preemptive Scheduling:-</h3>
+    <p style="text-align:left; font-size: 1.0rem;margin-left:0.7rem;">Non-Preemptive scheduling is used when a process
+        terminates , or when a process switches from running state to waiting state.</p>
+    <img src="nonpre.png" class="pic" width="300rem" height="auto"><br><br>
+
+
+
+
+
+    <div id="type2" style="margin-bottom: 5rem;"></div>
+    <h2 class="type">CPU SCHEDULING TERMINOLOGIES</h2>
+    <p class="term">1. <b>Arrival time</b>:- Arrival time (AT) is the time at which a process arrives at the ready
+        queue.</p>
+    <p class="term">2. <b>Burst Time</b>:- Burst time (BT) is the time required by the CPU to complete the execution of
+        a process, or the amount of time required for the execution of a process. It is also sometimes called the
+        execution time or running time.</p>
+    <p class="term">3. <b>Completion Time</b>:- Also written as CT, Completion time is the time at which a process
+        completes its execution. It is not to be confused with burst time.</p>
+    <p class="term">4. <b>Turn-Around Time</b>:- Also written as TAT, Turn around time is simply the difference between
+        completion time and arrival time <b>(CT - AT)</b> .</p>
+    <p class="term">5. <b>Waiting Time</b>:- Waiting time (WT) of a process is the difference between turn around time
+        and burst time<b>(TAT - BT)</b> , i.e. the amount of time a process waits for getting CPU resources in the ready
+        queue.</p>
+    <p class="term">6. <b>Response Time</b>:- Response time (RT) of a process is the time after which any process gets
+        CPU resources allocated after entering the ready queue.</p>
+
+
+
+    <div id="type3" style="margin-bottom: 5rem;"></div>
+    <h2 class="type">CPU SCHEDULING ALGORITHMS</h2>
+    <div class="cpu">
+        <div class="algo">
+            <h3 style="color:rgb(4, 158, 119);text-decoration: underline;">SHORTEST JOB FIRST(SJF)</h3>
+            <p style=" font-size: 1.0rem;">Shortest job first (SJF) is a scheduling process
+                that selects the waiting process with the smallest execution time
+                to execute next. This scheduling method may or may not be preemptive. Significantly reduces the average
+                waiting
+                time for other processes waiting to be executed.The full form of SJF is Shortest Job First.</p>
+        </div><br>
+        <div class="algo">
+            <h3 style="color:rgb(4, 158, 119);text-decoration: underline;"> SHORTEST REMAINING TIME FIRST(STRF)</h3>
+            <p style="font-size: 1.0rem;">Shortest remaining time first is the preemptive
+                version of the Shortest job first which we have discussed earlier
+                where the processor is allocated to the job closest to completion.In SRTF the process with the smallest
+                amount of time remaining until completion is selected to execute.
+            </p>
+        </div><br>
+        <div class="algo">
+            <h3 style="color:rgb(4, 158, 119);text-decoration: underline;">ROUND ROBIN(RR)</h3>
+            <p style="font-size: 1.0rem;">Round Robin is a CPU scheduling algorithm where
+                each process is cyclically assigned a fixed time slot.
+                It is the preemptive version of First come First Serve CPU Scheduling algorithm.
+                Round Robin CPU Algorithm generally focuses on Time Sharing technique. </p>
+        </div><br>
+    </div>
+    <a href="Index1.html"><button class="btn">IMPLEMENTATION</button></a>
+
+</body>
+
+</html>
